@@ -1,5 +1,7 @@
 const STORAGE_LANG_KEY = "portfolio_lang";
+const STORAGE_THEME_KEY = "portfolio_theme";
 const DEFAULT_LANG = "pt-BR";
+const FORCED_THEME = "dark";
 
 const ANALYTICS_CONFIG = {
   ga4MeasurementId: "",
@@ -17,6 +19,9 @@ const i18n = {
     navStack: "Stack",
     navProjects: "Projetos",
     navContact: "Contato",
+    themeToggleAria: "Alternar tema de cores",
+    themeLightLabel: "Modo claro",
+    themeDarkLabel: "Modo escuro",
     headerCta: "Ver cases",
     heroPill: "Engenharia de software e produto",
     heroIntro: "OLÁ, SOU",
@@ -25,7 +30,7 @@ const i18n = {
     heroPrimaryCta: "Explorar projetos",
     heroSecondaryCta: "Iniciar conversa",
     summaryTitle: "Resumo de atuação",
-    summaryItem1: "Projetos entregues em operações críticas e produtos digitais",
+    summaryItem1: "+20 projetos entregues em operações críticas e produtos digitais",
     summaryHead2: "Multi-stack",
     summaryItem2: "Web, Mobile, SaaS e automações de operação",
     summaryHead3: "Entrega orientada a impacto",
@@ -53,12 +58,11 @@ const i18n = {
     stackCardTitle4: "Foco atual",
     stackCardLevel4: "Evolução contínua",
     stackCardText4: "Aprofundamento em arquitetura de produto, observabilidade e otimização de performance ponta a ponta.",
-    projectsTitle: 'Aposto que você vai se <span class="text-accent">impressionar</span> com meu trabalho...',
-    projectsSubtitle: "Projetos em diferentes segmentos, com desafios reais de operação, produto e escala.",
+    projectsTitle: 'Projetos com <span class="text-accent">engenharia aplicada</span> em produção',
+    projectsSubtitle: "Soluções para contextos reais de operação, produto e escala.",
     contactTitle: "Vamos tirar uma ideia do papel?",
     contactText: "Disponível para novos produtos, modernização de sistemas e parcerias de longo prazo.",
     instagramLabel: "Instagram",
-    projectButton: "Abrir no GitHub",
   },
   en: {
     navAriaLabel: "Main navigation",
@@ -69,6 +73,9 @@ const i18n = {
     navStack: "Stack",
     navProjects: "Projects",
     navContact: "Contact",
+    themeToggleAria: "Toggle color theme",
+    themeLightLabel: "Light mode",
+    themeDarkLabel: "Dark mode",
     headerCta: "View case studies",
     heroPill: "Software and product engineering",
     heroIntro: "HELLO, I'M",
@@ -77,7 +84,7 @@ const i18n = {
     heroPrimaryCta: "Explore projects",
     heroSecondaryCta: "Start a conversation",
     summaryTitle: "Execution summary",
-    summaryItem1: "Projects delivered across critical operations and digital products",
+    summaryItem1: "20+ projects delivered across critical operations and digital products",
     summaryHead2: "Multi-stack",
     summaryItem2: "Web, Mobile, SaaS and operational automation",
     summaryHead3: "Impact-oriented delivery",
@@ -105,18 +112,17 @@ const i18n = {
     stackCardTitle4: "Current focus",
     stackCardLevel4: "Continuous growth",
     stackCardText4: "Deepening product architecture, observability, and end-to-end performance optimization.",
-    projectsTitle: 'I bet you will be <span class="text-accent">impressed</span> by my work...',
-    projectsSubtitle: "Projects across different segments with real-world product, scale, and operations challenges.",
+    projectsTitle: 'Projects with <span class="text-accent">applied engineering</span> in production',
+    projectsSubtitle: "Solutions built for real-world product, operations, and scale challenges.",
     contactTitle: "Ready to bring an idea to production?",
     contactText: "Available for new products, system modernization, and long-term partnerships.",
     instagramLabel: "Instagram",
-    projectButton: "Open on GitHub",
   },
 };
 
 const projetos = [
   {
-    nome: "Premium-Interset",
+    nome: "Field Inspection Operations Platform",
     descricao: {
       "pt-BR": "Plataforma Mobile de Fiscalização de Campo e Operações Offline.",
       en: "Mobile platform for field inspection and offline operations.",
@@ -132,7 +138,7 @@ const projetos = [
     techStack: ["Next.js", "NestJS", "Prisma", "MariaDB", "React Native"],
   },
   {
-    nome: "Plataforma para Cursos Online",
+    nome: "Multi-tenant Learning Management System",
     descricao: {
       "pt-BR": "LMS Multi-tenant para Assinaturas e Conteúdo.",
       en: "Multi-tenant LMS for subscriptions and content delivery.",
@@ -140,7 +146,7 @@ const projetos = [
     techStack: ["React", "Fastify", "TypeScript", "Postgres", "Prisma"],
   },
   {
-    nome: "Sistema para Bares",
+    nome: "Food Service Operations Management Platform",
     descricao: {
       "pt-BR": "Plataforma Multi-tenant de Gestão Operacional para Food Service.",
       en: "Multi-tenant operational management platform for food service.",
@@ -148,7 +154,7 @@ const projetos = [
     techStack: ["Node.js", "Express", "TypeScript", "MySQL", "React"],
   },
   {
-    nome: "APP Restaurantes",
+    nome: "POS and Order Workflow Web Platform",
     descricao: {
       "pt-BR": "Plataforma Web de PDV e Gestão de Comandas.",
       en: "Web platform for POS and order management.",
@@ -156,7 +162,7 @@ const projetos = [
     techStack: ["JavaScript", "Node.js", "SQLite"],
   },
   {
-    nome: "Calculadora de Investimentos",
+    nome: "Investment Simulation Mobile Engine",
     descricao: {
       "pt-BR": "Plataforma Mobile de Simulação e Planejamento.",
       en: "Mobile platform for investment simulation and planning.",
@@ -164,7 +170,7 @@ const projetos = [
     techStack: ["React Native", "Expo", "JavaScript", "AsyncStorage"],
   },
   {
-    nome: "Ponto Eletrônico",
+    nome: "Workforce Time Tracking Desktop System",
     descricao: {
       "pt-BR": "Sistema Desktop de Controle de Jornada e Produtividade.",
       en: "Desktop system for work-hour control and productivity.",
@@ -172,7 +178,7 @@ const projetos = [
     techStack: ["Python", "PySide6", "SQLite"],
   },
   {
-    nome: "Gate Vision",
+    nome: "LPR/OCR Smart Access Control System",
     descricao: {
       "pt-BR": "Sistema de Leitura de Placas e Controle Inteligente de Acesso (LPR/OCR).",
       en: "License plate reading and smart access control system (LPR/OCR).",
@@ -180,7 +186,7 @@ const projetos = [
     techStack: ["Python", "FastAPI", "OpenCV", "Tesseract"],
   },
   {
-    nome: "Copia GIGU",
+    nome: "Urban Mobility Operational Assistant App",
     descricao: {
       "pt-BR": "Plataforma Mobile de Assistência Operacional para Mobilidade Urbana.",
       en: "Mobile operational support platform for urban mobility.",
@@ -188,7 +194,7 @@ const projetos = [
     techStack: ["Kotlin", "Jetpack Compose", "Room"],
   },
   {
-    nome: "Sistema Amigo Secreto",
+    nome: "Event Draw Management Web Application",
     descricao: {
       "pt-BR": "Aplicação Web de Sorteio e Gestão de Eventos.",
       en: "Web application for draw management and event coordination.",
@@ -196,7 +202,7 @@ const projetos = [
     techStack: ["PHP", "JavaScript", "JSON storage"],
   },
   {
-    nome: "Optimizer",
+    nome: "Windows Performance Optimization Suite",
     descricao: {
       "pt-BR": "Suíte de Otimização de Performance e Hardening para Windows.",
       en: "Performance optimization and hardening suite for Windows.",
@@ -204,7 +210,7 @@ const projetos = [
     techStack: ["C#", ".NET", "WinForms"],
   },
   {
-    nome: "Site MSB Engenharia",
+    nome: "Engineering Corporate Lead Platform",
     descricao: {
       "pt-BR": "Portal Institucional e Gestão Comercial de Leads.",
       en: "Institutional website and commercial lead management platform.",
@@ -213,9 +219,9 @@ const projetos = [
   },
 ];
 
-const githubBase = "https://github.com/leonardoleaoo/";
 const projectsGrid = document.getElementById("projectsGrid");
 let currentLang = DEFAULT_LANG;
+let currentTheme = "dark";
 const prefersReducedMotion =
   typeof window.matchMedia === "function" &&
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -241,6 +247,46 @@ function getSavedLanguage() {
 
 function setSavedLanguage(lang) {
   localStorage.setItem(STORAGE_LANG_KEY, lang);
+}
+
+function getDefaultTheme() {
+  return FORCED_THEME;
+}
+
+function getSavedTheme() {
+  return FORCED_THEME;
+}
+
+function setSavedTheme(theme) {
+  localStorage.setItem(STORAGE_THEME_KEY, FORCED_THEME);
+}
+
+function atualizarThemeToggleUI() {
+  const themeToggle = document.getElementById("themeToggle");
+  const themeToggleText = document.getElementById("themeToggleText");
+  if (!themeToggle || !themeToggleText) return;
+
+  const nextTheme = currentTheme === "dark" ? "light" : "dark";
+  themeToggleText.textContent = nextTheme === "light" ? t("themeLightLabel") : t("themeDarkLabel");
+  themeToggle.setAttribute("aria-label", t("themeToggleAria"));
+}
+
+function aplicarTema(theme, save = true) {
+  if (theme !== "dark" && theme !== "light") return;
+  theme = FORCED_THEME;
+  const previousTheme = currentTheme;
+  currentTheme = theme;
+
+  document.documentElement.setAttribute("data-theme", currentTheme);
+  atualizarThemeToggleUI();
+  if (save) setSavedTheme(currentTheme);
+
+  if (previousTheme !== currentTheme) {
+    trackEvent("theme_switch", {
+      from: previousTheme,
+      to: currentTheme,
+    });
+  }
 }
 
 function atualizarBotaoIdiomaAtivo() {
@@ -275,6 +321,8 @@ function aplicarTraducoesEstaticas() {
     if (!key) return;
     element.innerHTML = t(key);
   });
+
+  atualizarThemeToggleUI();
 }
 
 function montarCardsProjetos() {
@@ -297,14 +345,6 @@ function montarCardsProjetos() {
           </div>
           <p>${escapeHtml(descricaoProjeto)}</p>
           <div class="tech-list">${techTags}</div>
-          <a class="brutal-btn pressable"
-             href="${githubBase}"
-             target="_blank"
-             rel="noopener noreferrer"
-             data-track="project_github_click"
-             data-track-label="${escapeHtml(projeto.nome)}">
-            ${t("projectButton")}
-          </a>
         </article>
       `;
     })
@@ -633,8 +673,14 @@ function configurarSeletorIdioma() {
   });
 }
 
+function configurarSeletorTema() {
+  return;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   currentLang = getSavedLanguage();
+  currentTheme = getSavedTheme();
+  aplicarTema(currentTheme, false);
 
   initAnalytics();
   configurarAnoRodape();
@@ -644,6 +690,7 @@ document.addEventListener("DOMContentLoaded", () => {
   configurarNavegacaoSuave();
   configurarSecaoAtivaNoMenu();
   configurarSeletorIdioma();
+  configurarSeletorTema();
   configurarTracking();
   atualizarBotaoIdiomaAtivo();
   aplicarEstadoPressable();
