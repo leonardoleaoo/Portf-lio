@@ -122,7 +122,10 @@ const i18n = {
 
 const projetos = [
   {
-    nome: "Field Inspection Operations Platform",
+    nome: {
+      "pt-BR": "Plataforma Mobile de Fiscalização e Operações de Campo Offline",
+      en: "Mobile Field Inspection and Offline Operations Platform",
+    },
     descricao: {
       "pt-BR": "Plataforma Mobile de Fiscalização de Campo e Operações Offline.",
       en: "Mobile platform for field inspection and offline operations.",
@@ -130,7 +133,10 @@ const projetos = [
     techStack: ["React Native", "Expo", "TypeScript", "MobX/MST"],
   },
   {
-    nome: "NutriOne",
+    nome: {
+      "pt-BR": "Plataforma SaaS Multiclínica para Gestão de Nutrição e Nutrologia",
+      en: "Multi-clinic SaaS Platform for Nutrition and Nutrology Management",
+    },
     descricao: {
       "pt-BR": "Plataforma SaaS Multiclínica para Nutrição e Nutrologia.",
       en: "Multi-clinic SaaS platform for nutrition and nutrilogical care.",
@@ -138,7 +144,10 @@ const projetos = [
     techStack: ["Next.js", "NestJS", "Prisma", "MariaDB", "React Native"],
   },
   {
-    nome: "Multi-tenant Learning Management System",
+    nome: {
+      "pt-BR": "Sistema LMS Multi-tenant para Gestão de Cursos e Assinaturas",
+      en: "Multi-tenant LMS for Course and Subscription Management",
+    },
     descricao: {
       "pt-BR": "LMS Multi-tenant para Assinaturas e Conteúdo.",
       en: "Multi-tenant LMS for subscriptions and content delivery.",
@@ -146,7 +155,10 @@ const projetos = [
     techStack: ["React", "Fastify", "TypeScript", "Postgres", "Prisma"],
   },
   {
-    nome: "Food Service Operations Management Platform",
+    nome: {
+      "pt-BR": "Sistema Multi-tenant de Gestão Operacional para Food Service",
+      en: "Multi-tenant Operational Management System for Food Service",
+    },
     descricao: {
       "pt-BR": "Plataforma Multi-tenant de Gestão Operacional para Food Service.",
       en: "Multi-tenant operational management platform for food service.",
@@ -154,7 +166,10 @@ const projetos = [
     techStack: ["Node.js", "Express", "TypeScript", "MySQL", "React"],
   },
   {
-    nome: "POS and Order Workflow Web Platform",
+    nome: {
+      "pt-BR": "Sistema Web de PDV e Gestão de Comandas para Restaurantes",
+      en: "Web-based POS and Tab Management System for Restaurants",
+    },
     descricao: {
       "pt-BR": "Plataforma Web de PDV e Gestão de Comandas.",
       en: "Web platform for POS and order management.",
@@ -162,7 +177,10 @@ const projetos = [
     techStack: ["JavaScript", "Node.js", "SQLite"],
   },
   {
-    nome: "Investment Simulation Mobile Engine",
+    nome: {
+      "pt-BR": "Aplicação Mobile de Simulação e Planejamento de Investimentos",
+      en: "Mobile Application for Investment Simulation and Planning",
+    },
     descricao: {
       "pt-BR": "Plataforma Mobile de Simulação e Planejamento.",
       en: "Mobile platform for investment simulation and planning.",
@@ -170,7 +188,10 @@ const projetos = [
     techStack: ["React Native", "Expo", "JavaScript", "AsyncStorage"],
   },
   {
-    nome: "Workforce Time Tracking Desktop System",
+    nome: {
+      "pt-BR": "Sistema Desktop de Controle de Jornada e Registro de Ponto",
+      en: "Desktop Time Tracking and Work Hours Control System",
+    },
     descricao: {
       "pt-BR": "Sistema Desktop de Controle de Jornada e Produtividade.",
       en: "Desktop system for work-hour control and productivity.",
@@ -178,7 +199,10 @@ const projetos = [
     techStack: ["Python", "PySide6", "SQLite"],
   },
   {
-    nome: "LPR/OCR Smart Access Control System",
+    nome: {
+      "pt-BR": "Sistema Inteligente de Controle de Acesso com Leitura de Placas (LPR/OCR)",
+      en: "Smart Access Control System with License Plate Recognition (LPR/OCR)",
+    },
     descricao: {
       "pt-BR": "Sistema de Leitura de Placas e Controle Inteligente de Acesso (LPR/OCR).",
       en: "License plate reading and smart access control system (LPR/OCR).",
@@ -186,7 +210,10 @@ const projetos = [
     techStack: ["Python", "FastAPI", "OpenCV", "Tesseract"],
   },
   {
-    nome: "Urban Mobility Operational Assistant App",
+    nome: {
+      "pt-BR": "Plataforma Mobile de Suporte Operacional para Mobilidade Urbana",
+      en: "Mobile Operational Support Platform for Urban Mobility",
+    },
     descricao: {
       "pt-BR": "Plataforma Mobile de Assistência Operacional para Mobilidade Urbana.",
       en: "Mobile operational support platform for urban mobility.",
@@ -194,7 +221,10 @@ const projetos = [
     techStack: ["Kotlin", "Jetpack Compose", "Room"],
   },
   {
-    nome: "Event Draw Management Web Application",
+    nome: {
+      "pt-BR": "Sistema Web de Sorteios e Gestão de Eventos",
+      en: "Web-based Draw and Event Management System",
+    },
     descricao: {
       "pt-BR": "Aplicação Web de Sorteio e Gestão de Eventos.",
       en: "Web application for draw management and event coordination.",
@@ -202,7 +232,10 @@ const projetos = [
     techStack: ["PHP", "JavaScript", "JSON storage"],
   },
   {
-    nome: "Windows Performance Optimization Suite",
+    nome: {
+      "pt-BR": "Suíte de Otimização de Performance e Hardening para Windows",
+      en: "Windows Performance Optimization and Hardening Suite",
+    },
     descricao: {
       "pt-BR": "Suíte de Otimização de Performance e Hardening para Windows.",
       en: "Performance optimization and hardening suite for Windows.",
@@ -210,7 +243,10 @@ const projetos = [
     techStack: ["C#", ".NET", "WinForms"],
   },
   {
-    nome: "Engineering Corporate Lead Platform",
+    nome: {
+      "pt-BR": "Portal Institucional e Sistema de Gestão Comercial de Leads",
+      en: "Institutional Portal and Commercial Lead Management System",
+    },
     descricao: {
       "pt-BR": "Portal Institucional e Gestão Comercial de Leads.",
       en: "Institutional website and commercial lead management platform.",
