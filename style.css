@@ -39,10 +39,10 @@ body {
   font-family: "Manrope", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at 16% 16%, rgba(45, 212, 191, 0.28), transparent 28%),
-    radial-gradient(circle at 84% 14%, rgba(59, 130, 246, 0.24), transparent 30%),
-    radial-gradient(circle at 78% 78%, rgba(139, 92, 246, 0.16), transparent 36%),
-    linear-gradient(180deg, var(--bg-top) 0, var(--bg-top-soft) 34rem, var(--bg-page) 34rem, #090d1f 100%);
+    radial-gradient(circle at 16% 12%, rgba(45, 212, 191, 0.24), transparent 30%),
+    radial-gradient(circle at 84% 10%, rgba(59, 130, 246, 0.22), transparent 32%),
+    radial-gradient(circle at 78% 74%, rgba(139, 92, 246, 0.14), transparent 40%),
+    linear-gradient(180deg, var(--bg-top) 0%, #0b1230 44%, var(--bg-page) 100%);
   overflow-x: clip;
 }
 
@@ -343,14 +343,7 @@ html[data-theme="light"] .theme-toggle-icon::after {
 }
 
 .hero::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -1px;
-  height: 120px;
-  background: linear-gradient(180deg, rgba(7, 11, 28, 0), rgba(11, 16, 36, 0.9));
-  pointer-events: none;
+  content: none;
 }
 
 html[data-theme="light"] body {
