@@ -444,6 +444,14 @@ svg {
   position: relative;
 }
 
+.about,
+.stack,
+.projects,
+.contact {
+  content-visibility: auto;
+  contain-intrinsic-size: 780px;
+}
+
 .about::before {
   content: "";
   position: absolute;

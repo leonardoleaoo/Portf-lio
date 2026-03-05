@@ -216,6 +216,9 @@ const projetos = [
 const githubBase = "https://github.com/leonardoleaoo/";
 const projectsGrid = document.getElementById("projectsGrid");
 let currentLang = DEFAULT_LANG;
+const prefersReducedMotion =
+  typeof window.matchMedia === "function" &&
+  window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 function t(key) {
   return i18n[currentLang]?.[key] ?? i18n[DEFAULT_LANG][key] ?? key;
@@ -311,6 +314,7 @@ function montarCardsProjetos() {
 }
 
 function animarCardsProjetos() {
+  if (prefersReducedMotion) return;
   if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") return;
 
   ScrollTrigger.getAll().forEach((trigger) => {
@@ -336,6 +340,7 @@ function animarCardsProjetos() {
 }
 
 function configurarAnimacoes() {
+  if (prefersReducedMotion) return;
   if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") return;
 
   gsap.registerPlugin(ScrollTrigger);
@@ -386,7 +391,7 @@ function configurarNavegacaoSuave() {
 
       event.preventDefault();
       secao.scrollIntoView({
-        behavior: "smooth",
+        behavior: prefersReducedMotion ? "auto" : "smooth",
         block: "start",
       });
 
@@ -461,7 +466,13 @@ function configurarSecaoAtivaNoMenu() {
 
   const setActiveLink = (sectionId) => {
     navLinks.forEach((link) => {
-      link.classList.toggle("active", link.getAttribute("href") === `#${sectionId}`);
+      const isActive = link.getAttribute("href") === `#${sectionId}`;
+      link.classList.toggle("active", isActive);
+      if (isActive) {
+        link.setAttribute("aria-current", "page");
+      } else {
+        link.removeAttribute("aria-current");
+      }
     });
   };
 
@@ -636,5 +647,9 @@ document.addEventListener("DOMContentLoaded", () => {
   configurarTracking();
   atualizarBotaoIdiomaAtivo();
   aplicarEstadoPressable();
-  configurarAnimacoes();
+  if (typeof window.requestIdleCallback === "function") {
+    window.requestIdleCallback(() => configurarAnimacoes(), { timeout: 600 });
+  } else {
+    setTimeout(() => configurarAnimacoes(), 120);
+  }
 });
