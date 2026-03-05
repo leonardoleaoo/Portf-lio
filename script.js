@@ -10,35 +10,37 @@ const ANALYTICS_CONFIG = {
 const i18n = {
   "pt-BR": {
     navAriaLabel: "Navegação principal",
+    mobileMenuAriaOpen: "Abrir menu principal",
+    mobileMenuAriaClose: "Fechar menu principal",
     navHome: "Início",
     navAbout: "Sobre",
     navStack: "Stack",
     navProjects: "Projetos",
     navContact: "Contato",
-    headerCta: "Ver Portfólio",
-    heroPill: "Desenvolvedor Front-end",
+    headerCta: "Ver cases",
+    heroPill: "Engenharia de software e produto",
     heroIntro: "OLÁ, SOU",
     heroBio:
-      "Atuo no desenvolvimento de sistemas que sustentam operação, crescimento e tomada de decisão. Minha atuação integra engenharia de software, visão de produto e execução orientada a resultado.",
-    heroPrimaryCta: "Veja meus projetos",
-    heroSecondaryCta: "Fale comigo",
-    summaryTitle: "Resumo executivo",
-    summaryItem1: "Projetos entregues em diferentes segmentos",
+      "Projeto e implemento produtos digitais com foco em clareza, performance e impacto de negócio. Do discovery à entrega, conecto decisão técnica com resultado mensurável.",
+    heroPrimaryCta: "Explorar projetos",
+    heroSecondaryCta: "Iniciar conversa",
+    summaryTitle: "Resumo de atuação",
+    summaryItem1: "Projetos entregues em operações críticas e produtos digitais",
     summaryHead2: "Multi-stack",
     summaryItem2: "Web, Mobile, SaaS e automações de operação",
-    summaryHead3: "Foco em resultado",
-    summaryItem3: "Produto, performance e clareza técnica na execução",
-    aboutTitle: "Atuação técnica com visão de negócio",
+    summaryHead3: "Entrega orientada a impacto",
+    summaryItem3: "Produto, performance e execução técnica com previsibilidade",
+    aboutTitle: "Tecnologia aplicada a crescimento de negócio",
     aboutText:
-      "Estruturo produtos digitais com arquitetura simples, experiência de uso clara e foco em escalabilidade. Trabalho com times e contextos de alta responsabilidade operacional, onde decisões técnicas impactam diretamente produtividade, receita e previsibilidade.",
+      "Desenho e evoluo produtos com arquitetura sustentável, UX objetiva e ciclos curtos de entrega. Atuo em contextos de alta responsabilidade operacional, onde decisões técnicas afetam receita, produtividade e escala.",
     aboutCardTitle1: "Engenharia de Produto",
-    aboutCardText1: "Transformação de requisitos complexos em entregas objetivas e usáveis.",
+    aboutCardText1: "Converto requisitos complexos em soluções úteis, com escopo claro e entrega contínua.",
     aboutCardTitle2: "Arquitetura Aplicada",
-    aboutCardText2: "Decisões técnicas para performance, manutenção e evolução contínua.",
+    aboutCardText2: "Estruturas técnicas que aceleram evolução sem sacrificar estabilidade.",
     aboutCardTitle3: "Execução Consistente",
-    aboutCardText3: "Planejamento, implementação e refinamento com padrão de produção.",
-    stackTitle: "Stack principal e foco técnico",
-    stackSubtitle: "Tecnologias onde atuo com mais profundidade em ambiente de produção.",
+    aboutCardText3: "Planejamento, implementação e melhoria contínua com padrão de produção.",
+    stackTitle: "Stack principal e especialidades",
+    stackSubtitle: "Tecnologias aplicadas em produtos reais, com foco em qualidade e manutenção.",
     stackCardTitle1: "Front-end Web",
     stackCardLevel1: "Avançado",
     stackCardText1: "Interfaces escaláveis com foco em performance, design system e experiência de produto.",
@@ -52,43 +54,45 @@ const i18n = {
     stackCardLevel4: "Evolução contínua",
     stackCardText4: "Aprofundamento em arquitetura de produto, observabilidade e otimização de performance ponta a ponta.",
     projectsTitle: 'Aposto que você vai se <span class="text-accent">impressionar</span> com meu trabalho...',
-    projectsSubtitle: "Seleção de projetos com diferentes contextos de negócio, escalas e stacks.",
-    contactTitle: "Vamos construir algo de impacto?",
-    contactText: "Estou disponível para novos desafios, produtos e parcerias estratégicas.",
+    projectsSubtitle: "Projetos em diferentes segmentos, com desafios reais de operação, produto e escala.",
+    contactTitle: "Vamos tirar uma ideia do papel?",
+    contactText: "Disponível para novos produtos, modernização de sistemas e parcerias de longo prazo.",
     instagramLabel: "Instagram",
-    projectButton: "Ver no GitHub",
+    projectButton: "Abrir no GitHub",
   },
   en: {
     navAriaLabel: "Main navigation",
+    mobileMenuAriaOpen: "Open main menu",
+    mobileMenuAriaClose: "Close main menu",
     navHome: "Home",
     navAbout: "About",
     navStack: "Stack",
     navProjects: "Projects",
     navContact: "Contact",
-    headerCta: "View Portfolio",
-    heroPill: "Front-end Developer",
+    headerCta: "View case studies",
+    heroPill: "Software and product engineering",
     heroIntro: "HELLO, I'M",
     heroBio:
-      "I build systems that support operations, growth, and decision-making. My work combines software engineering, product vision, and execution focused on outcomes.",
-    heroPrimaryCta: "See my projects",
-    heroSecondaryCta: "Contact me",
-    summaryTitle: "Executive summary",
-    summaryItem1: "Projects delivered across different segments",
+      "I design and ship digital products with strong clarity, performance, and business impact. From discovery to delivery, I connect technical decisions to measurable outcomes.",
+    heroPrimaryCta: "Explore projects",
+    heroSecondaryCta: "Start a conversation",
+    summaryTitle: "Execution summary",
+    summaryItem1: "Projects delivered across critical operations and digital products",
     summaryHead2: "Multi-stack",
     summaryItem2: "Web, Mobile, SaaS and operational automation",
-    summaryHead3: "Outcome-driven",
-    summaryItem3: "Product, performance and technical clarity in execution",
-    aboutTitle: "Technical execution with business perspective",
+    summaryHead3: "Impact-oriented delivery",
+    summaryItem3: "Product, performance and predictable technical execution",
+    aboutTitle: "Technology aligned with business growth",
     aboutText:
-      "I structure digital products with simple architecture, clear user experience, and scalability in mind. I work in high-responsibility operational contexts, where technical decisions directly impact productivity, revenue, and predictability.",
+      "I build and evolve products with sustainable architecture, objective UX, and short delivery cycles. I work in high-responsibility contexts where technical choices directly affect revenue, productivity, and scale.",
     aboutCardTitle1: "Product Engineering",
-    aboutCardText1: "Turning complex requirements into objective and usable deliveries.",
+    aboutCardText1: "I turn complex requirements into usable solutions with clear scope and continuous delivery.",
     aboutCardTitle2: "Applied Architecture",
-    aboutCardText2: "Technical decisions for performance, maintainability, and continuous evolution.",
+    aboutCardText2: "Technical foundations that speed up evolution without losing stability.",
     aboutCardTitle3: "Consistent Execution",
-    aboutCardText3: "Planning, implementation, and refinement with production-level standards.",
-    stackTitle: "Core stack and technical focus",
-    stackSubtitle: "Technologies where I deliver with deeper production-level ownership.",
+    aboutCardText3: "Planning, implementation, and continuous improvement with production standards.",
+    stackTitle: "Core stack and specialties",
+    stackSubtitle: "Technologies applied to real products with quality and long-term maintainability.",
     stackCardTitle1: "Front-end Web",
     stackCardLevel1: "Advanced",
     stackCardText1: "Scalable interfaces focused on performance, design systems, and product experience.",
@@ -102,11 +106,11 @@ const i18n = {
     stackCardLevel4: "Continuous growth",
     stackCardText4: "Deepening product architecture, observability, and end-to-end performance optimization.",
     projectsTitle: 'I bet you will be <span class="text-accent">impressed</span> by my work...',
-    projectsSubtitle: "A project selection across different business contexts, scales, and stacks.",
-    contactTitle: "Let's build something impactful?",
-    contactText: "I am available for new challenges, products, and strategic partnerships.",
+    projectsSubtitle: "Projects across different segments with real-world product, scale, and operations challenges.",
+    contactTitle: "Ready to bring an idea to production?",
+    contactText: "Available for new products, system modernization, and long-term partnerships.",
     instagramLabel: "Instagram",
-    projectButton: "View on GitHub",
+    projectButton: "Open on GitHub",
   },
 };
 
@@ -248,6 +252,15 @@ function aplicarTraducoesEstaticas() {
   const nav = document.querySelector(".main-nav");
   if (nav) nav.setAttribute("aria-label", t("navAriaLabel"));
 
+  const mobileMenuButton = document.getElementById("mobileMenuButton");
+  if (mobileMenuButton) {
+    const isOpen = mobileMenuButton.classList.contains("active");
+    mobileMenuButton.setAttribute(
+      "aria-label",
+      isOpen ? t("mobileMenuAriaClose") : t("mobileMenuAriaOpen")
+    );
+  }
+
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;
     if (!key) return;
@@ -376,8 +389,110 @@ function configurarNavegacaoSuave() {
         behavior: "smooth",
         block: "start",
       });
+
+      fecharMenuMobile();
     });
   });
+}
+
+function atualizarAriaMenuMobile(isOpen) {
+  const mobileMenuButton = document.getElementById("mobileMenuButton");
+  if (!mobileMenuButton) return;
+
+  mobileMenuButton.setAttribute("aria-expanded", String(isOpen));
+  mobileMenuButton.setAttribute(
+    "aria-label",
+    isOpen ? t("mobileMenuAriaClose") : t("mobileMenuAriaOpen")
+  );
+}
+
+function fecharMenuMobile() {
+  const nav = document.querySelector(".main-nav");
+  const mobileMenuButton = document.getElementById("mobileMenuButton");
+  if (!nav || !mobileMenuButton) return;
+
+  nav.classList.remove("open");
+  mobileMenuButton.classList.remove("active");
+  document.body.classList.remove("menu-open");
+  atualizarAriaMenuMobile(false);
+}
+
+function configurarMenuMobile() {
+  const nav = document.querySelector(".main-nav");
+  const mobileMenuButton = document.getElementById("mobileMenuButton");
+  if (!nav || !mobileMenuButton) return;
+
+  mobileMenuButton.addEventListener("click", () => {
+    const shouldOpen = !nav.classList.contains("open");
+    nav.classList.toggle("open", shouldOpen);
+    mobileMenuButton.classList.toggle("active", shouldOpen);
+    document.body.classList.toggle("menu-open", shouldOpen);
+    atualizarAriaMenuMobile(shouldOpen);
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!nav.classList.contains("open")) return;
+    const target = event.target;
+    if (!(target instanceof Node)) return;
+    if (nav.contains(target) || mobileMenuButton.contains(target)) return;
+    fecharMenuMobile();
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 900) fecharMenuMobile();
+  });
+}
+
+function configurarSecaoAtivaNoMenu() {
+  const navLinks = Array.from(document.querySelectorAll('.main-nav a[href^="#"]'));
+  if (navLinks.length === 0) return;
+
+  const sectionMap = navLinks
+    .map((link) => {
+      const id = link.getAttribute("href");
+      if (!id) return null;
+      const section = document.querySelector(id);
+      if (!section) return null;
+      return { link, section };
+    })
+    .filter(Boolean);
+
+  if (sectionMap.length === 0) return;
+
+  const setActiveLink = (sectionId) => {
+    navLinks.forEach((link) => {
+      link.classList.toggle("active", link.getAttribute("href") === `#${sectionId}`);
+    });
+  };
+
+  setActiveLink(sectionMap[0].section.id);
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      let mostVisible = null;
+
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        if (!mostVisible || entry.intersectionRatio > mostVisible.intersectionRatio) {
+          mostVisible = entry;
+        }
+      });
+
+      if (mostVisible) setActiveLink(mostVisible.target.id);
+    },
+    {
+      rootMargin: "-38% 0px -48% 0px",
+      threshold: [0.1, 0.3, 0.6],
+    }
+  );
+
+  sectionMap.forEach(({ section }) => observer.observe(section));
+}
+
+function configurarAnoRodape() {
+  const yearElement = document.getElementById("currentYear");
+  if (!yearElement) return;
+  yearElement.textContent = String(new Date().getFullYear());
 }
 
 function aplicarEstadoPressable() {
@@ -511,9 +626,12 @@ document.addEventListener("DOMContentLoaded", () => {
   currentLang = getSavedLanguage();
 
   initAnalytics();
+  configurarAnoRodape();
   aplicarTraducoesEstaticas();
   montarCardsProjetos();
+  configurarMenuMobile();
   configurarNavegacaoSuave();
+  configurarSecaoAtivaNoMenu();
   configurarSeletorIdioma();
   configurarTracking();
   atualizarBotaoIdiomaAtivo();
