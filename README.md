@@ -1,20 +1,20 @@
-﻿# Portfolio | Leonardo Leao
+# Portfólio | Leonardo Leão
 
-Projeto de portfolio pessoal com foco em experiencia premium, navegacao fluida e posicionamento profissional.
+Projeto de portfólio pessoal com foco em experiência premium, navegação fluida e posicionamento profissional.
 
-Apresenta projetos reais, stack principal e uma interface desenhada para comunicar autoridade tecnica com clareza.
+Apresenta projetos reais, stack principal e uma interface desenhada para comunicar autoridade técnica com clareza.
 
-## O que voce encontra aqui
+## O que você encontra aqui
 
 - Hero com proposta de valor clara e CTAs de alto contraste
-- Navegacao responsiva com menu mobile e destaque da secao ativa
-- Sessao de atuacao tecnica com foco em produto, execucao e escalabilidade
+- Navegação responsiva com menu mobile e destaque da seção ativa
+- Sessão de atuação técnica com foco em produto, execução e escalabilidade
 - Grid de projetos renderizado via JavaScript
 - Contatos diretos (WhatsApp, Instagram e GitHub)
-- Portfolio bilingue (`PT/EN`) com persistencia em `localStorage`
-- Animacoes com `GSAP + ScrollTrigger` e suporte a `prefers-reduced-motion`
+- Portfólio bilíngue (`PT/EN`) com persistência em `localStorage`
+- Animações com `GSAP + ScrollTrigger` e suporte a `prefers-reduced-motion`
 
-## Direcao visual
+## Direção visual
 
 Estilo **Premium Clean Editorial**:
 
@@ -22,7 +22,7 @@ Estilo **Premium Clean Editorial**:
 - Paleta profissional em tons de teal/blue
 - Cards com profundidade sutil e bordas suaves
 - Fundos com camadas e gradientes para dar atmosfera
-- Interacoes e transicoes curtas com foco em legibilidade
+- Interações e transições curtas com foco em legibilidade
 
 ## Stack
 
@@ -31,7 +31,7 @@ Estilo **Premium Clean Editorial**:
 - `JavaScript (Vanilla)`
 - `GSAP + ScrollTrigger` (CDN)
 
-## SEO e metricas
+## SEO e métricas
 
 Base pronta para:
 
@@ -41,6 +41,6 @@ Base pronta para:
 - `favicon.svg`, `og-cover.svg` e `site.webmanifest`
 - Estrutura para `GA4` e `Plausible` no `script.js`
 
-## Publicacao
+## Publicação
 
-Para publicar no GitHub Pages, basta manter os arquivos na branch principal do repositorio.
+Para publicar no GitHub Pages, basta manter os arquivos na branch principal do repositório.
