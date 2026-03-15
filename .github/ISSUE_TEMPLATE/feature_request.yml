@@ -1,0 +1,36 @@
+name: Feature request
+description: Sugira uma melhoria para o projeto
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Compartilhe a melhoria de forma objetiva para facilitar a avaliação.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema ou oportunidade
+      description: Qual necessidade essa melhoria resolve?
+      placeholder: Hoje existe uma limitação ou oportunidade em...
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Solução proposta
+      description: Descreva a melhoria sugerida.
+      placeholder: Seria interessante adicionar...
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impacto esperado
+      description: Explique o ganho para experiência, produto ou manutenção.
+  - type: textarea
+    id: references
+    attributes:
+      label: Referências
+      description: Links, prints ou exemplos que ajudem no entendimento.
